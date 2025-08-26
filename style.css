@@ -529,56 +529,64 @@ body {
 
 .social-photos {
     display: grid;
-    grid-template-columns: 365px 347px 294px 244px;
-    grid-template-rows: 260px 205px 296px 145px;
-    gap: 29px 25px;
-    width: 1340px;
-    height: 585px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 280px 280px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .social-photo {
-    border-radius: 20px;
+    border-radius: 16px;
     overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+}
+
+.social-photo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .social-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
-.social-photo-1 {
-    grid-row: 1 / 4;
-    height: 585px;
+.social-photo:hover img {
+    transform: scale(1.05);
 }
 
-.social-photo-2 {
-    grid-row: 1;
-    height: 260px;
+.social-photo-main {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
 }
 
-.social-photo-3 {
-    grid-row: 3;
-    height: 296px;
+.social-photo-top {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
 }
 
-.social-photo-4 {
-    grid-row: 1;
-    width: 294px;
-    height: 205px;
+.social-photo-side {
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
 }
 
-.social-photo-5 {
-    grid-row: 1;
-    width: 244px;
-    height: 205px;
+.social-photo-small {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
 }
 
-.social-photo-6 {
-    grid-row: 2 / 4;
-    grid-column: 3 / 5;
-    width: 567px;
-    height: 350px;
+.social-photo-medium {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+}
+
+.social-photo-wide {
+    display: none;
 }
 
 /* Footer */
@@ -754,9 +762,35 @@ body {
     }
     
     .social-photos {
-        grid-template-columns: 1fr;
-        gap: 20px;
-        height: auto;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 200px 200px 200px;
+        gap: 15px;
+        padding: 0 15px;
+    }
+    
+    .social-photo-main {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+    
+    .social-photo-top {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    
+    .social-photo-side {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    
+    .social-photo-small {
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+    
+    .social-photo-medium {
+        grid-column: 2 / 3;
+        grid-row: 3 / 4;
     }
     
     .footer-content {
