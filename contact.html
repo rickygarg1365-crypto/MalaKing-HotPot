@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Malaking Hotpot</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo-header.svg" alt="Malaking Hotpot Logo">
+                </a>
+            </div>
+            <nav class="nav-menu">
+                <a href="about.html">About</a>
+                <a href="menu.html">Menu</a>
+                <a href="locations.html">Locations</a>
+                <a href="careers.html">Careers</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+            <div class="header-button">
+                <a href="#order" class="btn btn-primary">Order Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="contact-title">Get in Touch</h1>
+            <p class="contact-subtitle">We'd love to hear from you! Reach out with any questions, feedback, or special requests.</p>
+        </div>
+    </section>
+
+    <!-- Contact Content Section -->
+    <section class="contact-content">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-form-section">
+                    <h2 class="section-title">Send us a Message</h2>
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Full Name *</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email Address *</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="form-input">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subject *</label>
+                            <select id="subject" name="subject" class="form-select" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="reservation">Reservation Request</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="catering">Catering Inquiry</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message *</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="6" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="contact-info-section">
+                    <h2 class="section-title">Contact Information</h2>
+                    <div class="contact-info-card">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="assets/images/bowl-icon.svg" alt="Location">
+                            </div>
+                            <div class="contact-details">
+                                <h3 class="contact-label">Address</h3>
+                                <p class="contact-text">10302 City Parkway #9<br>Surrey, BC V3T 4C2</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="assets/images/ingredients-icon.svg" alt="Phone">
+                            </div>
+                            <div class="contact-details">
+                                <h3 class="contact-label">Phone</h3>
+                                <p class="contact-text">
+                                    <a href="tel:+16044963148">(604) 496-3148</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="assets/images/soup-icon.svg" alt="Email">
+                            </div>
+                            <div class="contact-details">
+                                <h3 class="contact-label">Email</h3>
+                                <p class="contact-text">
+                                    <a href="mailto:info@malakinghotpot.com">info@malakinghotpot.com</a>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <img src="assets/images/weigh-pay-icon.svg" alt="Hours">
+                            </div>
+                            <div class="contact-details">
+                                <h3 class="contact-label">Hours</h3>
+                                <p class="contact-text">Monday - Sunday<br>10:30 AM - 1:30 AM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media Section -->
+    <section class="social-contact">
+        <div class="container">
+            <h2 class="section-title">Follow Us</h2>
+            <p class="social-intro">Stay connected with us on social media for the latest updates, special offers, and behind-the-scenes content!</p>
+            <div class="social-grid">
+                <a href="#" class="social-card">
+                    <div class="social-icon">
+                        <img src="assets/images/instagram-footer.svg" alt="Instagram">
+                    </div>
+                    <h3 class="social-title">Instagram</h3>
+                    <p class="social-description">Follow us for food photos, behind-the-scenes content, and daily specials.</p>
+                    <span class="social-handle">@malakinghotpot</span>
+                </a>
+                <a href="#" class="social-card">
+                    <div class="social-icon">
+                        <img src="assets/images/facebook-footer.svg" alt="Facebook">
+                    </div>
+                    <h3 class="social-title">Facebook</h3>
+                    <p class="social-description">Like our page for updates, events, and community news.</p>
+                    <span class="social-handle">@malakinghotpot</span>
+                </a>
+                <a href="#" class="social-card">
+                    <div class="social-icon">
+                        <img src="assets/images/tiktok-footer.svg" alt="TikTok">
+                    </div>
+                    <h3 class="social-title">TikTok</h3>
+                    <p class="social-description">Watch our cooking videos, staff highlights, and fun content.</p>
+                    <span class="social-handle">@malakinghotpot</span>
+                </a>
+                <a href="#" class="social-card">
+                    <div class="social-icon">
+                        <img src="assets/images/xiaohongshu-footer.svg" alt="XiaoHongShu">
+                    </div>
+                    <h3 class="social-title">XiaoHongShu</h3>
+                    <p class="social-description">Discover our recipes, tips, and authentic hot pot culture.</p>
+                    <span class="social-handle">@malakinghotpot</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you take reservations?</h3>
+                    <p class="faq-answer">Yes! We accept reservations for groups of 6 or more. Please call us at (604) 496-3148 or use our contact form above to make a reservation.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">How does the "Weigh to Pay" system work?</h3>
+                    <p class="faq-answer">You select your ingredients from our fresh selection, choose your broth, and we weigh your bowl. You only pay for what you choose, making it perfect for any appetite or budget.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you offer catering services?</h3>
+                    <p class="faq-answer">Yes! We offer catering for events and parties. Please contact us with your requirements and we'll be happy to create a custom package for you.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Are you open on holidays?</h3>
+                    <p class="faq-answer">We're open most holidays! Please call ahead to confirm our hours on specific holidays, as they may vary.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Do you have vegetarian options?</h3>
+                    <p class="faq-answer">Absolutely! We offer a wide variety of vegetarian ingredients and our Mushroom Vegan Broth is a popular choice among vegetarian diners.</p>
+                </div>
+                <div class="faq-item">
+                    <h3 class="faq-question">Is parking available?</h3>
+                    <p class="faq-answer">Yes, we have free parking available in the plaza where we're located. The parking lot is well-lit and monitored for your safety.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-background"></div>
+        <div class="footer-content">
+            <div class="footer-left">
+                <div class="footer-brand">
+                    <h3 class="footer-brand-name">© Mala king Hotpot</h3>
+                    <p class="footer-description">
+                        Mala king Hot Pot brings you the ultimate self-serve hot pot experience, offering over 100 fresh and high-quality ingredients and more than 10 flavourful broths and dry mixes. It's your pot, your way!
+                    </p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="footer-social-icon">
+                        <img src="assets/images/instagram-footer.svg" alt="Instagram">
+                    </a>
+                    <a href="#" class="footer-social-icon">
+                        <img src="assets/images/facebook-footer.svg" alt="Facebook">
+                    </a>
+                    <a href="#" class="footer-social-icon">
+                        <img src="assets/images/whatsapp-footer.svg" alt="WhatsApp">
+                    </a>
+                    <a href="#" class="footer-social-icon">
+                        <img src="assets/images/tiktok-footer.svg" alt="TikTok">
+                    </a>
+                    <a href="#" class="footer-social-icon xiaohongshu">
+                        <img src="assets/images/xiaohongshu-footer.svg" alt="XiaoHongShu">
+                    </a>
+                </div>
+            </div>
+            <div class="footer-right">
+                <div class="footer-info">
+                    <div class="footer-contact">
+                        <h4 class="footer-info-title">CONTACT</h4>
+                        <p class="footer-info-text">+1 (604) 496-3148</p>
+                    </div>
+                    <div class="footer-location">
+                        <h4 class="footer-info-title">LOCATION</h4>
+                        <p class="footer-info-text">10302 City pkwy #9<br>Surrey Bc, v3t4c2</p>
+                    </div>
+                    <div class="footer-hours">
+                        <h4 class="footer-info-title">Hours</h4>
+                        <p class="footer-info-text">Monday - Sunday<br>10:30 am - 01:30 Am</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="back-to-top">
+            <img src="assets/images/up-arrow.svg" alt="Back to top">
+        </div>
+        <img src="assets/images/intersect.svg" alt="" class="footer-intersect">
+        <div class="footer-bottom">
+            <div class="footer-logo">
+                <img src="assets/images/logo-footer.svg" alt="Malaking Hotpot Logo">
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

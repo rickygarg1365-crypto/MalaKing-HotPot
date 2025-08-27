@@ -304,7 +304,48 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // ===== CUSTOM CURSOR EFFECTS =====
+    const cursor = document.createElement('div');
+    cursor.className = 'custom-cursor';
+    cursor.style.cssText = `
+        position: fixed;
+        width: 20px;
+        height: 20px;
+        background: rgba(179, 46, 29, 0.8);
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 9999;
+        transform: translate(-50%, -50%);
+        transition: all 0.1s ease;
+        display: none;
+    `;
+    document.body.appendChild(cursor);
 
+    document.addEventListener('mousemove', function(e) {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+        cursor.style.display = 'block';
+    });
+
+    document.addEventListener('mouseleave', function() {
+        cursor.style.display = 'none';
+    });
+
+    // Enlarge cursor on hover over interactive elements
+    const interactiveElements = document.querySelectorAll('a, button, .dish-card, .social-photo');
+    interactiveElements.forEach(el => {
+        el.addEventListener('mouseenter', function() {
+            cursor.style.width = '40px';
+            cursor.style.height = '40px';
+            cursor.style.background = 'rgba(179, 46, 29, 0.6)';
+        });
+        
+        el.addEventListener('mouseleave', function() {
+            cursor.style.width = '20px';
+            cursor.style.height = '20px';
+            cursor.style.background = 'rgba(179, 46, 29, 0.8)';
+        });
+    });
 
     console.log('🍲 Malaking Hotpot website loaded successfully!');
 });
